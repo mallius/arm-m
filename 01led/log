@@ -1,0 +1,26 @@
+
+led.o:     file format elf32-littlearm
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	e59f0038 	ldr	r0, [pc, #56]	; 40 <delay+0x10>
+   4:	e3a01b55 	mov	r1, #87040	; 0x15400
+   8:	e5801000 	str	r1, [r0]
+   c:	e59f0030 	ldr	r0, [pc, #48]	; 44 <delay+0x14>
+  10:	e3a01d07 	mov	r1, #448	; 0x1c0
+  14:	e5801000 	str	r1, [r0]
+  18:	e3a03d7d 	mov	r3, #8000	; 0x1f40
+  1c:	eb000003 	bl	30 <delay>
+  20:	e3a01e1e 	mov	r1, #480	; 0x1e0
+  24:	e5801000 	str	r1, [r0]
+  28:	eb000000 	bl	30 <delay>
+  2c:	eafffff3 	b	0 <_start>
+
+00000030 <delay>:
+  30:	e2533001 	subs	r3, r3, #1	; 0x1
+  34:	e3530000 	cmp	r3, #0	; 0x0
+  38:	1afffffc 	bne	30 <delay>
+  3c:	e1a0f00e 	mov	pc, lr
+  40:	56000010 	.word	0x56000010
+  44:	56000014 	.word	0x56000014
