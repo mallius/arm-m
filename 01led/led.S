@@ -13,24 +13,6 @@ loop:
 	bl 	delay
 	mov	r3,#8000		//延时1次
 	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
-	mov	r3,#8000		//延时1次
-	bl 	delay
 	
 
 	mov	r1,#0x1E0	//全灭灯，5号一闪一闪
@@ -38,22 +20,6 @@ loop:
 	str	r1,[r0]
 	
 	mov	r3,#8000		//延时1次	,8000*10
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
-	bl	delay
-	mov	r3,#8000		//延时1次
 	bl	delay
 	mov	r3,#8000		//延时1次
 	bl	delay
